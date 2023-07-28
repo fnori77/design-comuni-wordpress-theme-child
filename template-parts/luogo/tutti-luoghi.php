@@ -77,13 +77,7 @@ $posts = $the_query->posts;
                     get_template_part("template-parts/luogo/card-full");
                 }?>
             </div>
-            <div class="row my-4">
-                <nav class="pagination-wrapper justify-content-center" aria-label="Navigazione centrata">
-                    <?php
-                    echo bootstrap_pagination($the_query);
-                    ?>
-                </nav>
-            </div>
+            
             
         </div>
     </form>
