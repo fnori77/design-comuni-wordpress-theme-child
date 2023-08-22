@@ -13,7 +13,7 @@ get_header();
   <!-- - img-->
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
-        <div class="img-wrapper"><img src="https://comune.piedimonte-etneo.ct.it/wp-content/uploads/2023/03/Slide1.jpg" title="titolo immagine" alt="descrizione immagine"></div>
+        <div class="img-wrapper"><img src="https://comune.roccasecca-dei-volsci.lt.it/wp-content/uploads/2023/03/slide1.jpg" title="titolo immagine" alt="descrizione immagine"></div>
     </div>
   </div>
   <!-- - texts-->
@@ -21,8 +21,8 @@ get_header();
     <div class="row">
         <div class="col-12">
           <div class="it-hero-text-wrapper bg-dark">
-              <h2>Nel cuore del Parco dell’Etna.</h2>
-              <p class="d-none d-lg-block">La storia di Piedimonte, ricca di motivi suggestivi per le sue origini, si carica di particolare fascino se si evocano i lontani trascorsi della civiltà bizantina presente nella frazione di Vena...</p>         
+              <h2>Un borgo nella provincia di Latina.</h2>
+              <p class="d-none d-lg-block">Sorge su uno sperone del Monte Curio, ai cui piedi scorre il fiume Amaseno. Il suo territorio è delimitato a est dal Monte Alto (821 m.), a sud dal Monte Curio (616 m.), a ovest dalle Serre (711 m.) e a nord dalla Valle dell'Amaseno.</p>         
             </div>
         </div>
     </div>

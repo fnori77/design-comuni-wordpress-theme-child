@@ -13,7 +13,7 @@ if(!$excerpt)
 
 ?>
 
-<article class="card card-bg card-article cursorhand" onclick="document.location.href='<?php the_permalink(); ?>';">
+<article class="card card-bg card-article cursorhand" style="margin-bottom:20px;" onclick="document.location.href='<?php the_permalink(); ?>';">
     <div class="card-body">
         <div class="card-article-img"  <?php if($image_url) echo 'style="background-image: url(\''.$image_url.'\');"'; ?>>
             <div class="date">

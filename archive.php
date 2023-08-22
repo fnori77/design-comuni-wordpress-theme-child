@@ -7,64 +7,39 @@
  * @package Design_Comuni_Italia
  */
 
-global $obj, $title, $tipo_documento;
-$obj = get_queried_object();
 $class = "petrol";
-
-if ( $obj->name=="documento_pubblico" ){
-    $title = "Documenti pubblici";
-	get_template_part( "archive-documento" );
-    return;
-}
-else
-	get_template_part("archive");
-
 
 get_header();
 ?>
 
     <main id="main-container" class="main-container <?php echo $class; ?>">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
-	                <?php get_template_part("template-parts/common/breadcrumb"); ?>
-                </div>
+	
 
-            </div>
+        <section class="section bg-white py-2 py-lg-3 py-xl-5">
             <div class="container">
-                <section>
-
                 <div class="row variable-gutters">
-                    <div class="col-lg-9 col-md-8">
+						<?php get_template_part("template-parts/common/breadcrumb"); ?>
+                    <div class="col-lg-10 col-md-8 offset-lg-1">
                         <div class="section-title">
 							<?php the_archive_title( '<h2 class="mb-0">', '</h2>' ); ?>
 							<?php the_archive_description("<p>","</p>"); ?>
                         </div><!-- /title-section -->
                     </div><!-- /col-lg-5 col-md-8 offset-lg-2 -->
 
-                    <div class="col-lg-3 col-md-4">
-						<?php get_template_part("template-parts/single/actions"); ?>
-                    </div><!-- /col-lg-3 col-md-4 offset-lg-1 -->
+                    
                 </div><!-- /row -->
-
-        </section><!-- /section -->
             </div><!-- /container -->
+        </section><!-- /section -->
 
 
-        <section class="section bg-white border-top border-bottom d-block d-lg-none">
-            <div class="container d-flex justify-content-between align-items-center py-3">
-                <h3 class="h6 text-uppercase mb-0 label-filter"><strong><?php _e("Filtri", "design_comuni_italia"); ?></strong></h3>
-                <a class="toggle-search-results-mobile toggle-menu menu-search push-body mb-0" href="#" aria-label="filtri">
-                    <svg class="svg-filters"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-filters"></use></svg>
-                </a>
-            </div>
+
+        <section class="bg-white border-top border-bottom d-block d-lg-none">
+         
         </section>
-        <section class="section bg-gray-light">
+        <section class="bg-gray-light"  style="padding:30px;">
             <div class="container">
                 <div class="row variable-gutters sticky-sidebar-container">
-                    <div class="col-lg-3 bg-white bg-white-left">
-						<?php get_template_part("template-parts/search/filters", "argomento"); ?>
-                    </div>
+                 
                     <div class="col-lg-7 offset-lg-1 pt84">
 						<?php if ( have_posts() ) : ?>
 							<?php
@@ -89,7 +64,6 @@ get_header();
                 </div><!-- /row -->
             </div><!-- /container -->
         </section>
-        </div>
     </main>
 
 <?php

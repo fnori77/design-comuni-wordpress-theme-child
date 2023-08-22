@@ -6,13 +6,13 @@
           <a class="d-lg-block navbar-brand" target="_blank" href="<?php echo dci_get_option("url_sito_regione"); ?>" target="_blank" aria-label="Vai al portale <?php echo dci_get_option("nome_regione"); ?> - link esterno - apertura nuova scheda" title="Vai al portale <?php echo dci_get_option("nome_regione"); ?>"><?php echo dci_get_option("nome_regione"); ?></a>
           <div class="it-header-slim-right-zone" role="navigation">
             <div class="nav-item dropdown">
-              <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true">
+              <!--<button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true">
                 <span class="visually-hidden">Lingua attiva:</span>
                 <span>ITA</span>
                 <svg class="icon">
                     <use href="#it-expand"></use>
                   </svg>
-              </button>
+              </button>-->
               <div class="dropdown-menu">
                 <div class="row">
                   <div class="col-12">

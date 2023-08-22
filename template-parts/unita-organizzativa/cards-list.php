@@ -43,7 +43,7 @@
 		    <?php } ?>
         </div>
     <?php } else { ?>
-        <div class="card card-teaser border rounded shadow p-4">
+        <div class="card card-teaser rounded shadow p-4">
             <div class="card-body pe-3">
                 <h4 class="u-main-black mb-1 title-small-semi-bold-medium">
                     <a class="text-decoration-none" href="<?php echo get_permalink($post->ID); ?>">

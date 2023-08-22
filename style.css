@@ -1,12 +1,324 @@
 /*!
-Theme Name: Design Comuni Italia
+Theme Name: Design Comuni Italia Child
 Author:
 Description: Design Comuni Italia è il tema di WordPress per i siti dei Comuni Italiani. Rispetta le linee guida di design dell’Agenzia per l’Italia digitale rilasciate dal Team per la Trasformazione Digitale. Utilizza Bootstrap Italia.
-Version: 1.1.0
+Version: 1.6.5
 License: AGPL 3.0 or later
 Text Domain: design_comuni_italia
-*/
 
+*/
+:root {
+  --color-primary: #06c;
+  --color-light: #0059b3;
+  --color-link-pieno: #ffffff;
+  --color-header: #006399;
+  --color-grigio: #5c6f82;
+}
+img {
+width: 100%; /* or max-width: 100%; */
+height: auto;
+}
+.it-header-center-wrapper {
+background: var(--color-primary) !important;
+}
+.it-header-slim-wrapper {
+  background: var(--color-light) !important;
+}
+.it-header-navbar-wrapper {
+  background-color: var(--color-light) !important;
+}
+.it-header-wrapper .navbar-collapsable .menu-wrapper
+{
+  background-color: var(--color-light) !important;
+}
+.it-calendar-wrapper .it-header-block-title {
+  background-color: var(--color-primary) !important;
+  color: #fff;
+}
+.bg-primary {
+ background-color: var(--color-primary) !important;
+}
+.input-group .input-group-append .btn {
+  background-color: var(--color-primary) !important;
+}
+.title-xlarge {
+  color: var(--color-light) !important;
+}
+a.read-more {
+  color: var(--color-primary) !important;
+}
+#head-section > div.container > div > div.col-lg-5.order-2.order-lg-1 > div > div > a.text-decoration-none
+{
+  color: var(--color-primary) !important;
+}
+a.read-more .icon {
+  fill: var(--color-light) !important;
+}
+.chip {
+  border-color: var(--color-primary) !important;
+}
+.chip .chip-label {
+  color: var(--color-primary) !important;
+}
+.chip.chip-simple:hover {
+  background-color: var(--color-primary) !important;
+}
+.chip .chip-label:hover {
+  color: var(--color-link-pieno) !important;
+}
+.evidence-section .card.card-teaser .link-list-wrapper ul li a span {
+  color: var(--color-primary) !important;
+}
+.cmp-contacts .contact-list li span {
+  color: var(--color-light) !important;
+text-align:center !important;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.icon-primary {
+  fill: var(--color-primary) !important;
+}
+.cmp-contacts .contact-list li span:hover{
+  color: var(--color-primary) !important;
+  text-decoration: underline;
+}
+
+.it-hero-wrapper.it-wrapped-container {
+  min-height: 0!important;
+  align-items: flex-end;
+}
+
+.it-hero-wrapper {
+  background-color: var(--color-link-pieno) !important;
+}
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: none;
+  box-shadow: none;
+}
+.btn-primary:hover {
+  background-color: var(--color-light) !important;
+  border-color: none;
+  box-shadow: none !important;
+}
+.btn-primary.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
+.breadcrumb-container .breadcrumb .breadcrumb-item a
+{
+  color: var(--color-primary) !important;
+  font-weight: 400;
+}
+.breadcrumb-container .breadcrumb .breadcrumb-item a:hover
+{
+  color: var(--color-light) !important;
+  font-weight: 400;
+}
+.it-hero-wrapper .it-hero-card {
+  background-color: var(--color-grigio) !important;
+}
+.card .card-body a .card-title.h5, .card .card-body a h5.card-title {
+  color: var(--color-primary) !important;
+}
+
+.cmp-navscroll .navbar.it-navscroll-wrapper .link-list-wrapper .accordion .accordion-header .accordion-button {
+  color: var(--color-primary) !important;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-list-wrapper ul li a span {
+  color: var(--color-primary) !important;
+  display: inline-block;
+  margin-right: 24px;
+  line-height: normal;
+}
+
+aside .cmp-navscroll .navbar.it-navscroll-wrapper .link-list-wrapper ul li a.active {
+  border-left: 2px solid var(--color-primary) !important;
+}
+
+.btn-dropdown {
+  color: var(--color-primary) !important;
+  padding: 0 4px;
+  background-color: rgba(0,0,0,0);
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.progress-bar {
+  background-color: var(--color-primary) !important;
+}
+
+.it-page-section.anchor-offset a:hover {
+  color: var(--color-primary) !important;
+}
+
+.it-carousel-wrapper .splide__pagination button {
+  background-color:  var(--color-primary) !important;
+  border-color: none;   
+}
+
+.card-bg-blue {
+  background-color: var(--color-light) !important;
+}
+
+.card.card-bg-warning  {
+  background-color: var(--color-light) !important;
+}
+
+.card-bg-dark {
+  background-color: var(--color-light) !important;
+}
+
+.t-primary {
+  color: var(--color-light);
+}
+
+.t-primary:hover{
+  color: var(--color-light);
+}
+
+
+.btn-outline-primary:hover {
+  color: var(--color-light);;
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  box-shadow: inset 0 0 0 2px var(--color-light);
+  text-decoration: underline;
+}
+
+.btn-outline-primary {
+  color: var(--color-light);;
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  box-shadow: inset 0 0 0 2px var(--color-light);
+}
+
+.has-bg-grey {
+  background-color: rgba(0,115,179,.05);
+}
+
+a.text-decoration-none:hover {
+  color: var(--color-light) !important;
+}
+
+.rating:not(:checked)>label:hover svg, .rating:not(:checked)>label:hover~label svg, .rating>input:checked~label svg {
+  fill: #f5cc02;
+}
+
+.navbar.it-navscroll-wrapper .link-list-wrapper ul li a.active {
+  border-left: 2px solid var(--color-light) !important;
+}
+
+.has-bg-grey {
+  background-color: rgba(0,115,179,.05);
+}
+
+.title-medium-2, .title-xxlarge-regular  {
+  font-size: 1.3333333333rem;
+  color: var(--color-light) !important;
+}
+
+.calendar-vertical .calendar-date .calendar-date-day small {
+  color: var(--color-light) !important;
+}
+.calendar-vertical .calendar-date .calendar-date-day:after {
+  background-color: var(--color-light) !important;
+}
+
+.calendar-vertical .calendar-date .calendar-date-day:before {
+  background-color: var(--color-light) !important;
+}
+
+.cmp-info-progress .step-active .title-medium {
+  font-weight: 700;
+  color: var(--color-light) !important;
+}
+
+.cmp-info-progress .step-active .info-progress-body {
+  border-bottom: 2px solid var(--color-light) !important;
+}
+
+.cmp-info-radio.has-border-green {
+  outline: 2px solid var(--color-light) !important;
+}
+
+.form-check [type=radio]:checked+label::before {
+  border-color: var(--color-light) !important;
+  background-color: var(--color-light) !important;
+}
+
+.form-check [type=radio]:checked+label::after {
+  border-color: var(--color-light) !important;
+  background-color: var(--color-light) !important;
+}
+
+.cmp-info-progress .completed .title-medium, .cmp-info-progress .step-active .title-medium {
+  font-weight: 700;
+  color: var(--color-light) !important;
+}
+
+.form-check [type=checkbox]:focus+label, .form-check [type=radio]:focus+label, .toggles label input[type=checkbox]:focus+.lever, :focus:not(.focus--mouse) {
+  border-color: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  outline-offset: none;
+}
+
+.form-check [type=checkbox]:focus+label, .form-check [type=radio]:focus+label, .toggles label input[type=checkbox]:focus+.lever, :focus:not(.focus--mouse) {
+  border-color:none !important;
+  box-shadow: none !important;
+  outline: 0!important;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.it-page-section .card.card-teaser-info {
+  border-left: 8px solid rgba(0,115,179,.05);
+}
+
+.card .categoryicon-top .icon {
+  fill: var(--color-light) !important;
+}
+
+.row-calendar .it-calendar-wrapper .card .card-text a:hover {
+  color: var(--color-light) !important;
+}
+
+.it-calendar-wrapper .card .card-text a {
+  color: var(--color-light) !important;
+}
+
+.point-list-wrapper .point-list .point-list-aside.point-list-primary {
+  color: var(--color-light) !important;
+  border-color: var(--color-light) !important;
+}
+
+.point-list-wrapper .point-list .point-list-aside.point-list-primary:after {
+  background-color: var(--color-light) !important;
+}
+
+.cmp-accordion .button-wrapper {
+  color: var(--color-light) !important;
+  text-decoration: none;
+}
+
+.accordion-header .accordion-button {
+  color: var(--color-light) !important;
+}
 svg.icon > image {
   width: inherit;
   height: inherit;

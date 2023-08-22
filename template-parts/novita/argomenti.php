@@ -4,7 +4,7 @@
     ) );
 ?>
 
-<div class="container py-5" id="argomento">
+<div class="container py-5" id="argomento" style="visibility:hidden; max-height:0px;">
     <h2 class="title-xxlarge mb-4">Esplora per categoria</h2>
     <div class="row g-4">       
         <?php foreach ($argomenti as $argomento) { 

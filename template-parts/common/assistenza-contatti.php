@@ -18,7 +18,7 @@
                   >
                 </li>
                 <li>
-                  <a class="list-item" href="https://comune.piedimonte-etneo.ct.it/richiesta-assistenza/" data-element="contacts"
+                  <a class="list-item" href="#" data-element="contacts"
                     ><svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use
                         href="#it-mail"
@@ -34,7 +34,7 @@
                   >
                 </li>
                 <li>
-                  <a class="list-item" href="<?php echo dci_get_template_page_url("page-templates/prenota-appuntamento.php");?>" data-element="appointment-booking">
+                  <a class="list-item" href="#" data-element="appointment-booking">
                     <svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use href="#it-calendar"></use>
                     </svg><span>Prenota appuntamento</span>
@@ -46,7 +46,7 @@
               </h2>
               <ul class="contact-list p-0">
                 <li>
-                  <a class="list-item" href="https://comune.piedimonte-etneo.ct.it/segnalazione-disservizio/"
+                  <a class="list-item" href="#"
                     ><svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use
                         href="#it-map-marker-circle"

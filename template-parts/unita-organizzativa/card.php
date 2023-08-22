@@ -44,7 +44,7 @@
     <?php } ?>
 </div>
 <?php } else { ?>
-<div class="card card-teaser border rounded shadow p-4">
+<div class="card card-teaser rounded shadow p-4">
     <div class="card-body pe-3">
         <h4 class="mb-3 titillium title-large-semi-bold">
             <a class="text-decoration-none" href="<?php echo get_permalink($ufficio->ID); ?>">

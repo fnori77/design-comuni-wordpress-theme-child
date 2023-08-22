@@ -2886,7 +2886,7 @@
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
     --bs-link-color: #0059b3;
-    --bs-link-hover-color: #006242;
+    --bs-link-hover-color: #06c;
     --bs-code-color: hsl(210deg, 54%, 20%);
     --bs-highlight-bg: hsl(178deg, 100%, 90%)
 }
@@ -11996,7 +11996,7 @@ fieldset:disabled .btn {
 
 .link-primary:hover,
 .link-primary:focus {
-    color: #006242 !important
+    color: #06c !important
 }
 
 .link-secondary {
@@ -21441,7 +21441,7 @@ nav.pagination-wrapper .btn.dropdown-toggle:after {
 }
 
 .nav-tabs .nav-link:hover {
-    color: #006141;
+    color: #06c;
     border-bottom-color: rgba(0, 0, 0, 0)
 }
 
@@ -21471,7 +21471,7 @@ nav.pagination-wrapper .btn.dropdown-toggle:after {
 }
 
 .nav-tabs .nav-link .icon:hover {
-    fill: #006141
+    fill: #06c
 }
 
 .nav-tabs .nav-link.active .icon {
@@ -24563,16 +24563,16 @@ nav.pagination-wrapper .btn.dropdown-toggle:after {
 }
 
 .callout .collapse-div .collapse-header .callout-more-toggle:hover {
-    color: #006242
+    color: #06c
 }
 
 .callout .collapse-div .collapse-header .callout-more-toggle:hover span {
-    border-color: #006242
+    border-color: #06c
 }
 
 .callout .collapse-div .collapse-header .callout-more-toggle:hover span:before,
 .callout .collapse-div .collapse-header .callout-more-toggle:hover span:after {
-    background: #006242
+    background: #06c
 }
 
 .callout .collapse-div .collapse-header .callout-more-toggle:active {
@@ -24949,12 +24949,12 @@ _:-ms-fullscreen,
 .toolbar a:not(.disabled):hover,
 .toolbar .btn-dropdown:not(.disabled):hover {
     text-decoration: underline;
-    color: #006141
+    color: #06c
 }
 
 .toolbar a:not(.disabled):hover .icon,
 .toolbar .btn-dropdown:not(.disabled):hover .icon {
-    fill: #006141
+    fill: #06c
 }
 
 .toolbar a _:-ms-fullscreen,
@@ -28429,7 +28429,7 @@ a.read-more:hover {
 
     .it-list-wrapper .it-list a.list-item:hover {
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
-        color: #006141;
+        color: #06c;
         text-decoration: none;
         background: #fff;
         position: relative;
@@ -29797,7 +29797,7 @@ a.badge:hover {
 }
 
 a.badge:hover.bg-primary {
-    background-color: #006242 !important
+    background-color: #06c !important
 }
 
 a.badge:hover.bg-secondary {

@@ -9,7 +9,6 @@
  * Developer : Giovanni Cozzolino
  */
 global $uo_id, $file_url, $hide_arguments, $luogo;
-
 get_header();
 ?>
     <main>
@@ -21,6 +20,7 @@ get_header();
 			$prefix = "_dci_unita_organizzativa_";
 
 			$immagine = dci_get_meta("immagine", $prefix, $post->ID);
+		
 			$descrizione_breve = dci_get_meta("descrizione_breve", $prefix, $post->ID);
 			$competenze = dci_get_meta("competenze", $prefix, $post->ID);
 			$tipi_organizzazione = get_the_terms($post, 'tipi_unita_organizzativa');
@@ -51,6 +51,7 @@ get_header();
                     </div>
                 </div>
             </div>
+		<?php get_template_part('template-parts/single/image-large'); ?>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10">
@@ -245,14 +246,15 @@ get_header();
                                         <div class="row g-2">
 											<?php foreach ($persone as $persona_id) { ?>
                                                 <div class="col-lg-6 col-md-12">
-													<?php get_template_part("template-parts/persona/card-vertical-thumb-uo"); ?>
-                                                </div>
+													<?php get_template_part("template-parts/persona/card-vertical-thumb-uo");?>
+                                             
+											</div>
 											<?php } ?>
                                         </div>
                                     </div>
                                 </section>
 							<?php } ?>
-
+							
 							<?php if ($servizi &&  is_array($servizi) && count($servizi)) { ?>
                                 <section id="servizi" class="it-page-section mb-4">
                                     <h3 class="my-2">Servizi offerti</h3>
@@ -279,7 +281,7 @@ get_header();
                             </section>
 
 							<?php if ($altre_sedi && is_array($altre_sedi) && count($altre_sedi)) { ?>
-                                <section id="altre-sedi" class="it-page-section mb-4">
+                                <section id="altre-sedi" class="it-page-section mb-4;">
                                     <h3 class="my-2">Altre sedi</h3>
 									<?php foreach ($altre_sedi as $sede_id) {
 										$post = get_post($sede_id);

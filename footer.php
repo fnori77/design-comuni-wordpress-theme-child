@@ -128,10 +128,7 @@
                                 <?php
                                     if (dci_get_option("contatti_PEC",'footer')) echo '<br />PEC: '; ?>
                                         <a href="mailto:<?php echo dci_get_option("contatti_PEC",'footer'); ?>" class="list-item" title="PEC <?php echo dci_get_option("nome_comune");?>"><?php echo dci_get_option("contatti_PEC",'footer'); ?></a>
-								                                <section> 
-									<div style="text-align:left;">
-                                Mail DPO: dpo@comune.piedimonte-etneo.ct.it
-										</div></section>
+								                             
 								<?php if(dci_get_option("centralino_unico",'footer')) echo '<br />Centralino unico: ' . dci_get_option("centralino_unico",'footer'); ?>
                             </p>
                         </div>

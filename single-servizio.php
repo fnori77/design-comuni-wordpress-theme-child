@@ -69,22 +69,22 @@ get_header();
                     "name": "<?= $post->post_title; ?>",
                     "serviceType": "<?= $categoria_servizio; ?>",
                     "serviceOperator": {
-                        "name": "<?= $ipa; ?>"
+                        "name": "nome"
                     },
                     "areaServed": {
-                        "name": "<?= convertToPlain($copertura_geografica); ?>"
+                        "name": "comune"
                     },
                     "audience": {
-                        "name": "<?= convertToPlain($destinatari); ?>"
+                        "name": "nome_audience"
                     },
                     "availableChannel": {
-                        "serviceUrl": "<?= $canale_digitale_link; ?>",
+                        "serviceUrl": "url",
                         "serviceLocation": {
                             "name": "<?= $ufficio->post_title; ?>",
                             "address": {
-                            "streetAddress": "<?= $indirizzo; ?>",
-                            "postalCode": "<?= $cap; ?>",
-                            "addressLocality": "<?= $quartiere; ?>"
+                            "streetAddress": "indirizzo",
+                            "postalCode": "cap",
+                            "addressLocality": "quartiere"
                             }
                         }
                     }
@@ -166,6 +166,7 @@ get_header();
                                                                 <li class="nav-item">
                                                                     <a class="nav-link" href="#who-needs">
                                                                         <span class="title-medium">A chi è rivolto</span>
+																	
                                                                     </a>
                                                                 </li>
                                                                 <?php } ?>
@@ -180,21 +181,27 @@ get_header();
                                                                 <li class="nav-item">
                                                                     <a class="nav-link" href="#how-to">
                                                                         <span class="title-medium">Come fare</span>
+																		
                                                                     </a>
+																	
                                                                 </li>
                                                                 <?php } ?>
                                                                 <?php if ( is_array($cosa_serve_list) ) { ?>
                                                                 <li class="nav-item">
                                                                     <a class="nav-link" href="#needed">
                                                                         <span class="title-medium">Cosa serve</span>
+															
                                                                     </a>
+																			
                                                                 </li>
                                                                 <?php } ?>
                                                                 <?php if ( $output ) { ?>
                                                                 <li class="nav-item">
                                                                     <a class="nav-link" href="#obtain">
                                                                         <span class="title-medium">Cosa si ottiene</span>
-                                                                    </a>
+                                                                
+																	</a>
+																	   
                                                                 </li>
                                                                 <?php } ?>
                                                                 <?php if ( !empty($fasi_scadenze_intro) || (is_array($fasi_scadenze) && count($fasi_scadenze)) || (is_array($fasi_group_simple_scadenze) && count($fasi_group_simple_scadenze)) ) { ?>
@@ -202,6 +209,7 @@ get_header();
                                                                     <a class="nav-link" href="#deadlines">
                                                                         <span class="title-medium">Tempi e scadenze</span>
                                                                     </a>
+																				
                                                                 </li>
                                                                 <?php } ?>
                                                                 <?php if ( $costi ) { ?>
@@ -228,6 +236,7 @@ get_header();
                                                                     <a class="nav-link" href="#conditions">
                                                                         <span class="title-medium">Condizioni di servizio</span>
                                                                     </a>
+																		
                                                                 </li>
                                                                 <?php } ?>
                                                                 <?php if ( $uo_id ) { ?>
@@ -235,6 +244,7 @@ get_header();
                                                                     <a class="nav-link" href="#contacts">
                                                                         <span class="title-medium">Contatti</span>
                                                                     </a>
+																
                                                                 </li>
                                                                 <?php } ?>
                                                             </ul>
@@ -252,26 +262,31 @@ get_header();
                         <div class="it-page-sections-container">
                             <section class="it-page-section mb-30">
                                 <h2 class="title-xxlarge mb-3" id="who-needs">A chi è rivolto</h2>
-                                <div class="richtext-wrapper lora" data-element="service-addressed">
-                                    <?php echo $destinatari ?>
+<div data-element="service-addressed">									
+                                <div class="richtext-wrapper lora">
+                                    <p><?php echo $destinatari ?></p>
                                 </div>
+								</div>
                             </section>
                             <?php if ($descrizione) { ?>
                             <section class="it-page-section mb-30">
                                 <h2 class="title-xxlarge mb-3" id="description">Descrizione</h2>
-                                <div class="richtext-wrapper lora" data-element="service-extended-description"><?php echo $descrizione ?></div>
+                                <div class="richtext-wrapper lora"><?php echo $descrizione ?></div>
                             </section>
                             <?php } ?>
                             <section class="it-page-section mb-30">
                                 <h2 class="title-xxlarge mb-3" id="how-to">Come fare</h2>
-                                <div class="richtext-wrapper lora" data-element="service-how-to">
-                                    <?php echo $come_fare ?>
+								<div data-element="service-how-to">																
+                                <div class="richtext-wrapper lora">
+                                  <p>  <?php echo $come_fare ?></p>
                                 </div>
+									</div>
                             </section>
                             <section class="it-page-section mb-30 has-bg-grey p-3">
                                 <h2 class="title-xxlarge mb-3" id="needed">Cosa serve</h2>
-                                <div class="richtext-wrapper lora" data-element="service-needed">
-                                    <?php echo $cosa_serve_intro ?>
+									<div data-element="service-needed">		
+                               <div class="richtext-wrapper lora">
+                                   <p> <?php echo $cosa_serve_intro ?></p>
                                     <ul >
                                         <?php foreach ($cosa_serve_list as $cosa_serve_item) { ?>
                                             <li><span><?php echo $cosa_serve_item ?></span></li>
@@ -281,17 +296,19 @@ get_header();
                             </section>
                             <section class="it-page-section mb-30">
                                 <h2 class="title-xxlarge mb-3" id="obtain">Cosa si ottiene</h2>
-                                <div class="richtext-wrapper lora" data-element="service-achieved"><?php echo $output ?></div>
+								<div data-element="service-achieved">
+                                <div class="richtext-wrapper lora"><p><?php echo $output ?></p></div></div>
                             </section>
                             <?php if ( !empty($fasi_scadenze_intro) || (is_array($fasi_scadenze) && count($fasi_scadenze)) || (is_array($fasi_group_simple_scadenze) && count($fasi_group_simple_scadenze)) ) { ?>
                             <section class="it-page-section mb-30">
                                 <div class="cmp-timeline">
                                     <h2 class="title-xxlarge mb-3" id="deadlines">Tempi e scadenze</h2>
-                                    <div class="richtext-wrapper lora" data-element="service-calendar-text">
-                                        <?php echo $fasi_scadenze_intro; ?>
-                                    </div>
+									<div data-element="service-calendar-list">									
+                                    <p class="richtext-wrapper lora">
+                                     <?php echo $fasi_scadenze_intro; ?>	</p></div>
+                       
                                     <?php if ((is_array($fasi_group_simple_scadenze) && count($fasi_group_simple_scadenze)) || (is_array($fasi_scadenze) && count($fasi_scadenze))) { ?>
-                                        <div class="calendar-vertical mb-3" data-element="service-calendar-list">
+                                        <div class="calendar-vertical mb-3">
                                             <?php if (!empty($fasi_group_simple_scadenze)) foreach ($fasi_group_simple_scadenze as $fase) {
                                                 ?>
                                                 <div class="calendar-date">
@@ -349,26 +366,28 @@ get_header();
                             <?php if ( $costi ) { ?>
                             <section class="it-page-section mb-30">
                                 <h2 class="title-xxlarge mb-3" id="costs">Quanto costa</h2>
-                                <div class="richtext-wrapper lora" data-element="service-cost"><?php echo $costi ?></div>
+                                <div class="richtext-wrapper lora"><?php echo $costi ?></div>
                             </section>
                             <?php } ?>
                             <section class="it-page-section mb-30 has-bg-grey p-4">
                                 <h2 class="mb-3" id="submit-request">Accedi al servizio</h2>
+									<div data-element="service-area">
+																			
+																	
                                 <?php if ($canale_digitale_link) { ?>
-                                <p class="text-paragraph lora mb-4" data-element="service-generic-access"><?php echo $canale_digitale_text; ?></p>
+                                <p class="text-paragraph lora mb-4"><?php echo $canale_digitale_text; ?></p>
                                 <button type="button" class="btn btn-primary mobile-full" onclick="location.href='<?php echo $canale_digitale_link; ?>';" data-element="service-online-access">
                                     <span class=""><?php echo $canale_digitale_label; ?></span>
-                                </button>
+                                </button>	</div>
                                 <?php } ?>
-                                <p class="text-paragraph lora mt-4" data-element="service-generic-access"><?php echo $canale_fisico_text; ?></p>
-                                <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="location.href='<?php echo dci_get_template_page_url('page-templates/prenota-appuntamento.php'); ?>';" data-element="service-booking-access">
+                                <p class="text-paragraph lora mt-4"><?php echo $canale_fisico_text; ?></p>
+                                <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="location.href='https://servizionline.comune.bassiano.lt.it/urbi/progs/urp/ur1UR069.sto?DB_NAME=n1200145&SOLCodice=';"data-element="service-online-access">
                                     <span class="">Prenota appuntamento</span>
                                 </button>
                             </section>
                             <?php if ( $more_info ) {  ?>
                             <section class="it-page-section mb-30">
                                 <h2 class="title-xxlarge mb-3" id="more-info">Ulteriori informazioni</h2>
-                                <h3 class="mb-3 subtitle-medium">Graduatorie di accesso</h3>
                                 <div class="richtext-wrapper lora">
                                     <?php echo $more_info ?>
                                 </div>
@@ -388,14 +407,18 @@ get_header();
 
                             <section class="it-page-section">
                                 <h2 class="mb-3" id="contacts">Contatti</h2>
+									<div data-element="service-file">
+																			
+																		
                                 <div class="row">
                                     <div class="col-12 col-md-8 col-lg-6 mb-30">
                                         <div class="card-wrapper rounded h-auto mt-10">
-                                            <?php
+                                           <p> <?php
                                                 $with_border = true;
                                                 get_template_part("template-parts/unita-organizzativa/card");
-                                            ?>
+                                            ?></p>
                                         </div>
+										</div>
                                     </div>
                                     <div class="col-12 mb-30">
                                         <span class="text-paragraph-small">Argomenti:</span>
