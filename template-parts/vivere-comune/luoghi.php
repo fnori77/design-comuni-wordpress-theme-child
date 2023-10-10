@@ -26,7 +26,7 @@
                     label="Tutti i luoghi" 
                     buttonNext=true
                     data-element="live-button-locations"
-                    onclick="location.href='/vivere-il-comune/luoghi/';"
+                    onclick="location.href='<?php echo site_url()?>/vivere-il-comune/luoghi/';"
                 >
                     <span class="">Tutti i luoghi</span>
                 </button>

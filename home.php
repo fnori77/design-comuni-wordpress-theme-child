@@ -13,7 +13,7 @@ get_header();
   <!-- - img-->
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
-        <div class="img-wrapper"><img src="https://comune.roccasecca-dei-volsci.lt.it/wp-content/uploads/2023/03/slide1.jpg" title="titolo immagine" alt="descrizione immagine"></div>
+        <div class="img-wrapper"><img src="https://comune.vejano.vt.it/wp-content/uploads/2023/09/slide1.jpg" title="titolo immagine" alt="descrizione immagine"></div>
     </div>
   </div>
   <!-- - texts-->
@@ -21,9 +21,10 @@ get_header();
     <div class="row">
         <div class="col-12">
           <div class="it-hero-text-wrapper bg-dark">
-              <h2>Un borgo nella provincia di Latina.</h2>
-              <p class="d-none d-lg-block">Sorge su uno sperone del Monte Curio, ai cui piedi scorre il fiume Amaseno. Il suo territorio è delimitato a est dal Monte Alto (821 m.), a sud dal Monte Curio (616 m.), a ovest dalle Serre (711 m.) e a nord dalla Valle dell'Amaseno.</p>         
-            </div>
+              <span class="it-Categoria"></span>
+              <h2>Comune di Vejano</h2>
+              <p class="d-none d-lg-block">La storia di Vejano è decisamente antica. Alcuni scavi archeologici hanno infatti riportato alla luce dei reperti databili intorno al 1800 - 1300 a.C. Il territorio venne abitato dagli etruschi e dai romani, come attestato da scavi archeologici effettuati negli scorsi decenni.</p>
+          </div>
         </div>
     </div>
   </div>
@@ -40,12 +41,12 @@ get_header();
                 get_template_part("template-parts/home/messages");
             }
 		    ?>
-			
+
             <?php get_template_part("template-parts/home/notizie"); ?>
             <?php get_template_part("template-parts/home/calendario"); ?>
         </section>
         <section id="evidenza" class="evidence-section">
-            <div class="section py-5 pb-lg-80 px-lg-5 position-relative" style="<?php if (file_exists(get_stylesheet_directory().'/assets/img/evidenza-header-roccadarce.webp')){ ?>background-image: url('<?php echo esc_url( get_stylesheet_directory_uri()); ?>/assets/img/evidenza-header-roccadarce.webp');<?php }else{ ?>background-image: url('<?php echo esc_url( get_template_directory_uri()); ?>/assets/img/evidenza-header-piedimonte.webp');<?php } ?>">
+            <div class="section py-5 pb-lg-80 px-lg-5 position-relative" style="<?php if (file_exists(get_stylesheet_directory().'/assets/img/evidenza-header-vejano.webp')){ ?>background-image: url('<?php echo esc_url( get_stylesheet_directory_uri()); ?>/assets/img/evidenza-header-vejano.webp');<?php }else{ ?>background-image: url('<?php echo esc_url( get_template_directory_uri()); ?>/assets/img/evidenza-header-vejano.webp');<?php } ?>">
                 <?php get_template_part("template-parts/home/argomenti"); ?>
                 <?php get_template_part("template-parts/home/siti","tematici"); ?>
             </div>

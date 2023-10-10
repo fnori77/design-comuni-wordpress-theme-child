@@ -63,10 +63,10 @@ get_header();
                                     </div>
                                     <p class="subtitle-small mb-3" data-element="service-description">
 										<?php echo $descrizione_breve ?>
-                                    </p>
+                                    </p><!--
                                     <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="location.href='<?php echo dci_get_template_page_url('page-templates/prenota-appuntamento.php'); ?>';">
                                         <span class="">Prenota appuntamento</span>
-                                    </button>
+                                    </button>-->
                                 </div>
                                 <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
 									<?php

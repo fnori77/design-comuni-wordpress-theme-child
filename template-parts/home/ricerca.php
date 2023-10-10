@@ -6,7 +6,7 @@
     <div class="section section-muted p-0 py-5">
         <div class="container">
             <div class="row">
-                <div class="col col-sm-10 offset-sm-1 col-md-8 offset-md-2 px-0">
+                <div class="col col-sm-12 offset-sm-1 col-md-12 offset-md-0 px-0">
                 <form role="search" id="search-form" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <div class="cmp-input-search">
                         <div class="form-group autocomplete-wrapper mb-2 mb-lg-4">
@@ -30,17 +30,18 @@
                     >
                     Link utili
                     </div>
-                    <ul class="link-list">
+                  
                         <?php foreach ($links as $link) { ?>
-                            <li>
-                                <a class="list-item mb-3 active ps-0" href="<?php echo $link['url']; ?>">
-                                <span class="text-button-normal"
-                                    ><?php echo $link['testo']; ?>
+                        
+                            <button class="btn btn-primary btn-icon btn-me" style="margin-bottom: 20px;">
+  <span>      <a  href="<?php echo $link['url']; ?>" style="color:#fff;"></style><?php echo $link['testo']; ?></span>
+</button>
+
                                 </span>
                                 </a>
-                            </li>
+                                
                         <?php } ?>
-                    </ul>
+                 
                 </div>
                 <?php } ?>
             </div>

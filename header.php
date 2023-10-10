@@ -15,104 +15,10 @@ $current_group = dci_get_current_group();
 <html lang="it">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="theme-color" content="#0059b3"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<meta name="description" content="Sito istituzionale del Comune di Vejano">
 	<?php wp_head(); ?>
-	<style>
-		.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
-}
-		@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}	
-		.navbar .megamenu{ padding: 1rem; }
-
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-
-  .navbar .has-megamenu{position:static!important;}
-  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
-
-}	
-/* ============ desktop view .end// ============ */
-
-/* ============ mobile view ============ */
-@media(max-width: 991px){
-  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
-    overflow-y: auto;
-      max-height: 90vh;
-      margin-top:10px;
-  }
-}
-/* ============ mobile view .end// ============ */
-		/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-	.dropdown-menu li{ position: relative; 	}
-	.nav-item .submenu{ 
-		display: none;
-		position: absolute;
-		left:100%; top:-7px;
-	}
-	.nav-item .submenu-left{ 
-		right:100%; left:auto;
-	}
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
-	.dropdown-menu > li:hover > .submenu{ display: block; }
-}	
-/* ============ desktop view .end// ============ */
-
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-}	
-	</style>
-<script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function(){
-// make it as accordion for smaller screens
-if (window.innerWidth < 992) {
-
-  // close all inner dropdowns when parent is closed
-  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
-    everydropdown.addEventListener('hidden.bs.dropdown', function () {
-      // after dropdown is hidden, then find all submenus
-        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
-          // hide every submenu as well
-          everysubmenu.style.display = 'none';
-        });
-    })
-  });
-
-  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
-    element.addEventListener('click', function (e) {
-        let nextEl = this.nextElementSibling;
-        if(nextEl && nextEl.classList.contains('submenu')) {	
-          // prevent opening link if link needs to open dropdown
-          e.preventDefault();
-          if(nextEl.style.display == 'block'){
-            nextEl.style.display = 'none';
-          } else {
-            nextEl.style.display = 'block';
-          }
-
-        }
-    });
-  })
-}
-// end if innerWidth
-}); 
-// DOMContentLoaded  end
-</script>
 </head>
 <body <?php body_class(); ?>>
 
@@ -149,11 +55,7 @@ if (window.innerWidth < 992) {
                 </a>
               </div>
               <div class="it-right-zone">
-				 <!--PAGOPA
-<a href="https://servizi.piedimonteetneoonline.it/" target="_self"> 
-   <img style="width: 75%; padding-left: 150px; margin-right: -60px;"src="https://comune.piedimonte-etneo.ct.it/wp-content/uploads/2023/07/PagoPa.png" alt="PagoPa" border="0"/> 
-</a>
-				PAGOPA-->
+				
               <?php
                     $show_socials = dci_get_option( "show_socials", "socials" );
                     if($show_socials == "true") : 
@@ -225,38 +127,24 @@ if (window.innerWidth < 992) {
                     <div class="it-brand-title"><?php echo dci_get_option("nome_comune"); ?></div>
                   </div>
                 </a>
-					<!--menu primario-->
-					
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-<div class="container-fluid">
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="main_nav">
-		<ul data-element="main-navigation" class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="/amministrazione" data-element="management"> Amministrazione </a></li>
-			<li class="nav-item"><a class="nav-link" href="/novita" data-element="news">Novità</a></li>
-			<!--<li class="nav-item dropdown has-megamenu">
-				<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mega menu  </a>
-				<div class="dropdown-menu megamenu" role="menu">
-					This is content of megamenu. <br>
-				       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
-				</div> <!-- dropdown-mega-menu.// 
-			</li>-->
-		</ul>
-		<ul class="navbar-nav ms-auto">
-			<li class="nav-item"><a class="nav-link" href="/servizi" data-element="all-services">Servizi</a></li>
-			<li class="nav-item"><a class="nav-link" href="/vivere-il-comune" data-element="live">Vivere il Comune</a></li>
-		</ul>
-		
-	</div> <!-- navbar-collapse.// -->
-</div> <!-- container-fluid.// -->
-</nav>
-		
-					<!--menu primario-->
+                <nav aria-label="Principale">
+                  <?php
+                      $location = "menu-header-main";
+                      if ( has_nav_menu( $location ) ) {
+                          wp_nav_menu(array(
+                            "theme_location" => $location, 
+                            "depth" => 0,  
+                            "menu_class" => "navbar-nav", 
+                            'items_wrap' => '<ul class="%2$s" id="%1$s" data-element="main-navigation">%3$s</ul>',
+                            "container" => "",
+                            'list_item_class'  => 'nav-item',
+                            'link_class'   => 'nav-link',
+                            'current_group' => $current_group,
+                            'walker' => new Main_Menu_Walker()
+                          ));
+                      }
+                    ?>
+                </nav>
                 <nav aria-label="Secondaria">
                   <?php
                     $location = "menu-header-right";

@@ -128,7 +128,8 @@
                                 <?php
                                     if (dci_get_option("contatti_PEC",'footer')) echo '<br />PEC: '; ?>
                                         <a href="mailto:<?php echo dci_get_option("contatti_PEC",'footer'); ?>" class="list-item" title="PEC <?php echo dci_get_option("nome_comune");?>"><?php echo dci_get_option("contatti_PEC",'footer'); ?></a>
-								                             
+								                                <section> 
+								
 								<?php if(dci_get_option("centralino_unico",'footer')) echo '<br />Centralino unico: ' . dci_get_option("centralino_unico",'footer'); ?>
                             </p>
                         </div>
@@ -200,6 +201,13 @@
             </div>
         </div>
     </div>
+		<section class="cookiebar fade" aria-label="Gestione dei cookies">
+  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
+  <div class="cookiebar-buttons">
+    <a href="<?php echo $_SERVER['REQUEST_URI']; ?>cookie/" class="cookiebar-btn">Preferenze<span class="visually-hidden">cookies</span></a>
+    <button data-bs-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="visually-hidden"> i cookies</span></button>
+  </div>
+</section>
 </footer>
 
 <?php wp_footer(); ?>

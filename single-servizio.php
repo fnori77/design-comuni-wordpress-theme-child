@@ -381,7 +381,7 @@ get_header();
                                 </button>	</div>
                                 <?php } ?>
                                 <p class="text-paragraph lora mt-4"><?php echo $canale_fisico_text; ?></p>
-                                <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="location.href='https://servizionline.comune.bassiano.lt.it/urbi/progs/urp/ur1UR069.sto?DB_NAME=n1200145&SOLCodice=';"data-element="service-online-access">
+                                <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="window.open('https://servizionline.comune.vejano.vt.it/urbi/progs/urp/ur1UR069.sto?DB_NAME=wt00035314&SOLCodice=ss')"data-element="service-online-access">
                                     <span class="">Prenota appuntamento</span>
                                 </button>
                             </section>

@@ -26,7 +26,7 @@
                     label="Tutti gli eventi" 
                     buttonNext=true
                     data-element="live-button-events"
-                    onclick="location.href='/vivere-il-comune/eventi/';"
+                    onclick="location.href='<?php echo site_url()?>/vivere-il-comune/eventi/';"
                 >
                     <span class="">Tutti gli eventi</span>
                 </button>

@@ -7,7 +7,7 @@
  */
 global $post;
 	$prefix = "_dci_persona_pubblica_";
-	$organizzazioni = dci_get_meta("organizzazioni", $prefix, 4958);
+	$organizzazioni = dci_get_meta("organizzazioni", $prefix, 4594);
 get_header();
 
 ?>

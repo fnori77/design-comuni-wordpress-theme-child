@@ -18,7 +18,7 @@
                   >
                 </li>
                 <li>
-                  <a class="list-item" href="#" data-element="contacts"
+                  <a class="list-item" href="https://comune.vejano.vt.it/richiesta-assistenza" data-element="contacts"
                     ><svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use
                         href="#it-mail"
@@ -26,7 +26,7 @@
                   >
                 </li>
                 <li>
-                  <a class="list-item" href="tel:<?php echo $numero_verde; ?>">
+                  <a class="list-item" href="tel: 0761.463051">
                   <svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use
                         href="#it-hearing"
@@ -34,7 +34,7 @@
                   >
                 </li>
                 <li>
-                  <a class="list-item" href="#" data-element="appointment-booking">
+                  <a class="list-item" href="https://servizionline.comune.vejano.vt.it/urbi/progs/urp/ur1UR069.sto?DB_NAME=wt00035314&SOLCodice=ss" target="_blank" data-element="appointment-booking">
                     <svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use href="#it-calendar"></use>
                     </svg><span>Prenota appuntamento</span>
@@ -46,7 +46,7 @@
               </h2>
               <ul class="contact-list p-0">
                 <li>
-                  <a class="list-item" href="#"
+                  <a class="list-item" href="https://comune.vejano.vt.it/segnalazione-disservizio"
                     ><svg class="icon icon-primary icon-sm" aria-hidden="true">
                       <use
                         href="#it-map-marker-circle"

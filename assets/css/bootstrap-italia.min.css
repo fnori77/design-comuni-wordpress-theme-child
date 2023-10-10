@@ -20741,7 +20741,7 @@ label.input-number-label {
 }
 
 .bootstrap-select-wrapper .dropdown.bootstrap-select .dropdown-menu li a.selected {
-    color: #004730;
+    color: #0059b3;
     text-decoration: underline
 }
 
@@ -22553,12 +22553,12 @@ nav.pagination-wrapper .btn.dropdown-toggle:after {
 }
 
 .link-list-wrapper ul li a.active span {
-    color: #004730;
+    color: #0059b3;
     text-decoration: underline
 }
 
 .link-list-wrapper ul li a.active .icon {
-    color: #004730
+    color: #0059b3
 }
 
 .link-list-wrapper ul li a.disabled {
@@ -24031,7 +24031,7 @@ nav.pagination-wrapper .btn.dropdown-toggle:after {
 
 .navbar.it-navscroll-wrapper .link-list-wrapper ul li ul li a.active span {
     text-decoration: underline;
-    color: #004730
+    color: #0059b3
 }
 
 .navbar.it-navscroll-wrapper h3,
@@ -24137,7 +24137,7 @@ nav.pagination-wrapper .btn.dropdown-toggle:after {
 
     .navbar.it-navscroll-wrapper .link-list-wrapper ul li ul li a.active span {
         text-decoration: underline;
-        color: #004730
+        color: #0059b3
     }
 
     .navbar.it-navscroll-wrapper h3,
