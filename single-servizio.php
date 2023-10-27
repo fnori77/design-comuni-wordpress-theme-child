@@ -74,9 +74,8 @@ get_header();
                     "areaServed": {
                         "name": "comune"
                     },
-                    "audience": {
-                        "name": "nome_audience"
-                    },
+                     "audience": { "audienceType": "<?php echo convertToPlain($destinatari); ?>", "name":"all"
+					 },
                     "availableChannel": {
                         "serviceUrl": "url",
                         "serviceLocation": {
@@ -381,7 +380,7 @@ get_header();
                                 </button>	</div>
                                 <?php } ?>
                                 <p class="text-paragraph lora mt-4"><?php echo $canale_fisico_text; ?></p>
-                                <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="window.open('https://servizionline.comune.vejano.vt.it/urbi/progs/urp/ur1UR069.sto?DB_NAME=wt00035314&SOLCodice=ss')"data-element="service-online-access">
+                                <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" onclick="location.href='#';"data-element="service-online-access">
                                     <span class="">Prenota appuntamento</span>
                                 </button>
                             </section>
